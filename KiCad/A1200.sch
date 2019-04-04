@@ -1,0 +1,224 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "A1200 HxC Button Extender"
+Date "2019-03-22"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5C816F06
+P 5950 3650
+F 0 "SW1" H 5950 3885 50  0000 C CNN
+F 1 "SW_SPST" H 5950 3794 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H9.5mm" H 5950 3650 50  0001 C CNN
+F 3 "" H 5950 3650 50  0001 C CNN
+	1    5950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5C816F84
+P 5950 4100
+F 0 "SW2" H 5950 4335 50  0000 C CNN
+F 1 "SW_SPST" H 5950 4244 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H9.5mm" H 5950 4100 50  0001 C CNN
+F 3 "" H 5950 4100 50  0001 C CNN
+	1    5950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW3
+U 1 1 5C816FEB
+P 5950 4550
+F 0 "SW3" H 5950 4785 50  0000 C CNN
+F 1 "SW_SPST" H 5950 4694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H9.5mm" H 5950 4550 50  0001 C CNN
+F 3 "" H 5950 4550 50  0001 C CNN
+	1    5950 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J1
+U 1 1 5C81707D
+P 4400 4050
+F 0 "J1" H 4450 4567 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 4450 4476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 4400 4050 50  0001 C CNN
+F 3 "~" H 4400 4050 50  0001 C CNN
+	1    4400 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VSS #PWR0101
+U 1 1 5C817171
+P 3900 3650
+F 0 "#PWR0101" H 3900 3500 50  0001 C CNN
+F 1 "VSS" H 3917 3823 50  0000 C CNN
+F 2 "" H 3900 3650 50  0001 C CNN
+F 3 "" H 3900 3650 50  0001 C CNN
+	1    3900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3650 3900 3750
+Wire Wire Line
+	3900 3750 4200 3750
+$Comp
+L power:VSS #PWR0102
+U 1 1 5C8171DC
+P 5700 3600
+F 0 "#PWR0102" H 5700 3450 50  0001 C CNN
+F 1 "VSS" H 5717 3773 50  0000 C CNN
+F 2 "" H 5700 3600 50  0001 C CNN
+F 3 "" H 5700 3600 50  0001 C CNN
+	1    5700 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3600 5700 3650
+Wire Wire Line
+	5700 3650 5750 3650
+$Comp
+L power:VSS #PWR0103
+U 1 1 5C81721D
+P 5700 4050
+F 0 "#PWR0103" H 5700 3900 50  0001 C CNN
+F 1 "VSS" H 5717 4223 50  0000 C CNN
+F 2 "" H 5700 4050 50  0001 C CNN
+F 3 "" H 5700 4050 50  0001 C CNN
+	1    5700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VSS #PWR0104
+U 1 1 5C817252
+P 5700 4500
+F 0 "#PWR0104" H 5700 4350 50  0001 C CNN
+F 1 "VSS" H 5717 4673 50  0000 C CNN
+F 2 "" H 5700 4500 50  0001 C CNN
+F 3 "" H 5700 4500 50  0001 C CNN
+	1    5700 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4050 5700 4100
+Wire Wire Line
+	5700 4100 5750 4100
+Wire Wire Line
+	5700 4500 5700 4550
+Wire Wire Line
+	5700 4550 5750 4550
+Text GLabel 4050 4050 0    50   Input ~ 0
+BUTTON_DOWN
+Text GLabel 4050 4150 0    50   Input ~ 0
+BUTTON_UP
+Text GLabel 4850 4050 2    50   Input ~ 0
+BUTTON_SELECT
+Wire Wire Line
+	4050 4050 4200 4050
+Wire Wire Line
+	4050 4150 4200 4150
+Wire Wire Line
+	4700 4050 4850 4050
+Text GLabel 6250 3650 2    50   Input ~ 0
+BUTTON_DOWN
+Text GLabel 6250 4100 2    50   Input ~ 0
+BUTTON_SELECT
+Text GLabel 6250 4550 2    50   Input ~ 0
+BUTTON_UP
+Wire Wire Line
+	6150 3650 6250 3650
+Wire Wire Line
+	6150 4100 6250 4100
+Wire Wire Line
+	6150 4550 6250 4550
+NoConn ~ 4200 3850
+NoConn ~ 4200 3950
+NoConn ~ 4200 4250
+NoConn ~ 4200 4350
+NoConn ~ 4700 4350
+NoConn ~ 4700 4250
+NoConn ~ 4700 4150
+NoConn ~ 4700 3950
+NoConn ~ 4700 3850
+NoConn ~ 4700 3750
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C8C1D86
+P 3350 3350
+F 0 "#FLG0101" H 3350 3425 50  0001 C CNN
+F 1 "PWR_FLAG" H 3350 3524 50  0000 C CNN
+F 2 "" H 3350 3350 50  0001 C CNN
+F 3 "~" H 3350 3350 50  0001 C CNN
+	1    3350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VSS #PWR0105
+U 1 1 5C8C1DA4
+P 3350 3450
+F 0 "#PWR0105" H 3350 3300 50  0001 C CNN
+F 1 "VSS" H 3368 3623 50  0000 C CNN
+F 2 "" H 3350 3450 50  0001 C CNN
+F 3 "" H 3350 3450 50  0001 C CNN
+	1    3350 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3350 3350 3350 3450
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5C8C2406
+P 4550 2150
+F 0 "H1" H 4650 2196 50  0000 L CNN
+F 1 "MountingHole" H 4650 2105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 4550 2150 50  0001 C CNN
+F 3 "~" H 4550 2150 50  0001 C CNN
+	1    4550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C8C244C
+P 4550 2400
+F 0 "H2" H 4650 2446 50  0000 L CNN
+F 1 "MountingHole" H 4650 2355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 4550 2400 50  0001 C CNN
+F 3 "~" H 4550 2400 50  0001 C CNN
+	1    4550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J2
+U 1 1 5C8D4031
+P 5450 2150
+F 0 "J2" H 5530 2192 50  0000 L CNN
+F 1 "Screw_Terminal_01x01" H 5530 2101 50  0000 L CNN
+F 2 "TruConnect:Tapped Terminal" H 5450 2150 50  0001 C CNN
+F 3 "~" H 5450 2150 50  0001 C CNN
+	1    5450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J3
+U 1 1 5C8D6B23
+P 5450 2400
+F 0 "J3" H 5530 2442 50  0000 L CNN
+F 1 "Screw_Terminal_01x01" H 5530 2351 50  0000 L CNN
+F 2 "TruConnect:Tapped Terminal" H 5450 2400 50  0001 C CNN
+F 3 "~" H 5450 2400 50  0001 C CNN
+	1    5450 2400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5250 2150
+NoConn ~ 5250 2400
+$EndSCHEMATC
